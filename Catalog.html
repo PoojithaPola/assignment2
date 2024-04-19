@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="flex.css"> <!-- Assuming you want to reuse the same CSS file -->
+    <title>Catalog Page</title>
+</head>
+<body bgcolor="pink" align="center">
+    <div class="container">
+        <!-- Header -->
+        <h1>Products Page</h1>
+        
+        <!-- dairy -->
+        <div class="dairy">
+         <div class="row">
+          <div class="column">
+            <img src="dairy.jpeg"  width='200' height='200' alt="DAIRY PRODUCTS">
+            <h3>DAIRY PRODUCTS</h3>
+            <p>Fresh Dairy Products.</p>
+            <p>Price: $50.00</p>
+            <button onclick="addToCart('DAIRY PRODUCTS', 50.00)">Add to Cart</button>
+        </div>
+        
+        <!-- fruits -->
+        <div class="fruits"> 
+      <div class="column">
+     <img src="fruits.jpeg" width='200' height='200' alt="fruits">
+            <h3> FRUITS </h3>
+            <p>Fresh Fruits.</p>
+            <p>Price: $100.00</p>
+            <button onclick="addToCart('fruits', 100.00)">Add to Cart</button>
+        </div>
+        
+        <!-- vegetables -->
+        <div class="vegetables"> 
+       <div class="column">
+<img src="vegetables.jpeg" width='200' height='200' alt="vegetables">
+            <h3> VEGETABLES </h3>
+            <p> Fresh Vegetables</p>
+            <p>Price: $200.00</p>
+            <button onclick="addToCart('vegetables', 200 .00)">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
