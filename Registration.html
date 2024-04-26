@@ -2,13 +2,23 @@
  <head>
 <link rel="stylesheet" href="reg.css">
 <title>Registration</title>
-
-
 <style>
   body {
-    background-image: url('RR.jpeg');
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+    background-image: url('bg.jpeg');
     background-size: cover;
     background-position: center;
+  }
+  .container{
+  max-width:300px;
+  width:100%;
+  background: skyblue;
+  padding: 25px 30px;
+  border-radius: 5px;
   }
 
 </style>
@@ -19,15 +29,25 @@
 <div class="container">
 <form move align="center">
     <h1>Registration Page</h1>
-<p>Username:</p>
+<p>Username: </p>
 <input type="text" placeholder="Username" required><br>
 <p>Date of Birth:</p>
-<input type="text" placeholder="dd-mm-yyyy" required><br>
+ <input type="text" placeholder="dd-mm-yyyy" required><br><br>
+
+ <label>Gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
 <p>Email:</p>
 <input type="email" placeholder="Email" required><br>
 <p>Password:</p>
 <input type="password" placeholder="Password" required><br>
 <br><button type="submit">Register</button><br>
+ <p style="text-align: center; margin-top: 10px;">Already have an account? <a href="login.html">Login now</a></p>
+
 </form>
 </div>
 </body>
